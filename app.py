@@ -278,7 +278,7 @@ with tab1:
     label_bulan = [f"{BULAN[t.month - 1]} {t.year}" for t in rata["target_date"]]
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=rata["target_date"], y=rata["aktual"], name="Aktual", mode="lines+markers",
-                             line=dict(color="#111827", width=2.5), customdata=label_bulan,
+                             line=dict(color="#f59e0b", width=3), customdata=label_bulan,
                              hovertemplate="%{customdata}<br>Aktual %{y:.2f}%<extra></extra>"))
     fig.add_trace(go.Scatter(x=rata["target_date"], y=rata[KOLOM_PREDIKSI[pilih_model]], name=pilih_model,
                              mode="lines+markers", line=dict(color=WARNA_UTAMA, width=2.5), customdata=label_bulan,
